@@ -41,7 +41,7 @@ function App() {
 
   return (
     <>
-      <div className='align-self-center mb-2'>
+      <div className='align-self-center mb-2'> 
         <CreateTask handleSubmit={handleNewTask} />
         <ToDo todos={tasks.filter(function (task) { return task.done == false })} handleTick = {handleTaskDone} handleDelete = {handleTaskDelete} />
         <Done todos={tasks.filter(function (task) { return task.done == true })} handleTick = {handleTaskDone} handleDelete = {handleTaskDelete}/>
