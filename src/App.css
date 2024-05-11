@@ -1,0 +1,20 @@
+#root {
+  background-color: #0D0714;
+}
+
+
+
+.todo-list .card {
+  background-color: #15101C;
+  color: #9E78CF;
+  font-size: medium;
+  font-weight: lighter;
+  margin-bottom: 2%;
+}
+
+.todo-list .card .card-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+

@@ -1,0 +1,24 @@
+.add-task {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+
+  .add-task > button{
+    background-color: #9E78CF;
+    color: #FFFFFF;
+    margin: 0%;
+  }
+  
+  .add-task > input {
+    border-color: #3E1671;
+    background: transparent;
+    margin-right: 10px;
+  }
+  
+  .add-task > input::placeholder {
+    color: #777777;
+    opacity: 1;
+    font-weight: lighter;
+  }
+  
