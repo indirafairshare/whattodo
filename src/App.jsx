@@ -1,13 +1,32 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import CreateTask from './CreateTask';
 import ToDo from './ToDo';
 import Done from './Done';
+import * as FirestoreService from './config/firebase'
 
 function App() {
-  const [tasks, setTasks] = useState([
-  ])
+  const [tasks, setTasks] = useState([]);
+  const [user, setUser] = useState();
+
+  useEffect(() => {
+    FirestoreService.getTasks().then(res => {
+      const storedTasks = []
+      res.forEach((doc) => {
+        console.log(doc.data());
+        storedTasks.push({
+          "id": doc.id,
+          "todo": doc.data().todo,
+          "done": doc.data().done
+        })
+      });
+      console.log(storedTasks);
+      setTasks(storedTasks);
+    });
+    
+  }, [])
+
 
   function handleNewTask(new_task) {
     setTasks([
