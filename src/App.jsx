@@ -29,17 +29,24 @@ function App() {
 
 
   function handleNewTask(new_task) {
-    setTasks([
-      ...tasks,
-      {
-        "id": (tasks.length + 1), "todo": new_task, "done": false
-      }
-    ])
+    FirestoreService.addTask(new_task).then(res => {
+      console.log(res);
+      setTasks([
+        ...tasks,
+        {
+          "id": res.id, "todo": new_task, "done": false
+        }
+      ])
+    })
+    
   }
 
   function handleTaskDone(task_id) {
     const nextTasks = tasks.map((task) => {
       if (task.id == task_id){
+        FirestoreService.updateTask(task_id, task.done).then(res => {
+          console.log(res);
+        })
         return {
           ...task,
           "done": task.done ? false : true
