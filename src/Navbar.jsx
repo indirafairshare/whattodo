@@ -3,17 +3,17 @@ import "./Navbar.css"
 import LogInButton from "./LogInButton";
 
 function Navbar({user, isLoggedIn, handleUser}) {
-    if (isLoggedIn) {
-        welcome = <h3>Hi, {user.name} </h3>
-    }
-    else {
-        welcome = <></>
-    }
+    // if (isLoggedIn) {
+    //     const welcome = <h3>Hi, {user.name} </h3>
+    // }
+    // else {
+    //     const welcome = <></>
+    // }
     return (
         <>
             <nav className="navbar">
                 <div className="container-fluid">
-                    {welcome}
+                    {/* {welcome} */}
                     <LogInButton className="btn rounded-1 submit" isLoggedIn={isLoggedIn} user={user} handleUser={handleUser}/>
                 </div>
             </nav>
