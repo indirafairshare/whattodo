@@ -3,22 +3,47 @@
   padding-right: 10%;
   padding-top: 5%;
 }
-.todo > p {
-  color: #FFFFFF;
+
+.todo>p {
+  color: #102C57;
   font-weight: lighter;
-  font-size: small;
+  font-size: medium;
 }
 
 .todo .todo-list .card .card-body .done-check {
-  color: #9E78CF;
+  color: #102C57;
   font-size: medium;
   float: right;
   padding-top: 1rem;
 }
 
-.todo .todo-list .card .card-body  > p {
-  color: #9E78CF;
+.todo .todo-list .card .card-body>p {
+  color: #102C57;
   font-size: medium;
   float: left;
   padding-top: 1rem;
+}
+
+.todo .todo-list .card .card-body .done-priority-red {
+  color: #F6685E;
+  font-size: medium;
+  float: right;
+  padding-top: 1rem;
+
+}
+
+.todo .todo-list .card .card-body .done-priority-yellow {
+  color: #FFC04C;
+  font-size: medium;
+  float: right;
+  padding-top: 1rem;
+
+}
+
+.todo .todo-list .card .card-body .done-priority-green {
+  color: #66B266;
+  font-size: medium;
+  float: right;
+  padding-top: 1rem;
+
 }

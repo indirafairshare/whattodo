@@ -1,15 +1,14 @@
 #root {
-  background-color: #0D0714;
+  background-color: #FEFAF6;
   z-index: -1;
 }
 
 
-
 .todo-list .card {
-  background-color: #15101C;
-  color: #9E78CF;
+  background-color: #FEFAF6;
+  color: #102C57;
   font-size: medium;
-  font-weight: lighter;
+  font-weight: light;
   margin-bottom: 2%;
 }
 

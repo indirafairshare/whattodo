@@ -37,7 +37,8 @@ function App() {
             storedTasks.push({
               "id": doc.id,
               "todo": doc.data().todo,
-              "done": doc.data().done
+              "done": doc.data().done,
+              "priority": doc.data().priority
             })
           });
           // console.log(storedTasks);
@@ -66,13 +67,13 @@ function App() {
 
 
   function handleNewTask(new_task) {
-    // console.log(user);
+    console.log("THIS", new_task);
     FirestoreService.addTask(new_task, user).then(res => {
-      // console.log(res);
+      console.log(res);
       setTasks([
         ...tasks,
         {
-          "id": res.id, "todo": new_task, "done": false
+          "id": res.id, "todo": new_task.name, "priority": new_task.priority, "done": false
         }
       ])
     })

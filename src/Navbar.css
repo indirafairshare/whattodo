@@ -1,7 +1,16 @@
-
+.navbar {
+    background-color: #EADBC8;
+}
 .navbar .container-fluid > button {
-    background-color: #9E78CF;
-    color: #FFFFFF;
+    background-color: #102C57;
+    color: #FEFAF6;
     font-weight: lighter;
+}
+
+.navbar .container-fluid > h4 {
+    color: #102C57;
+    font-weight: lighter;
+    font-size: medium;
+    padding-top: 0.5rem;
 }
 

@@ -3,22 +3,28 @@ import "./Navbar.css"
 import LogInButton from "./LogInButton";
 
 function Navbar({user, isLoggedIn, handleUser}) {
-    // if (isLoggedIn) {
-    //     const welcome = <h3>Hi, {user.name} </h3>
-    // }
-    // else {
-    //     const welcome = <></>
-    // }
+    if (isLoggedIn){ 
     return (
         <>
             <nav className="navbar">
                 <div className="container-fluid">
-                    {/* {welcome} */}
+                    <h4>Welcome, {user.name}</h4>
+                    <LogInButton className="btn rounded-1 submit" isLoggedIn={isLoggedIn} user={user} handleUser={handleUser}/>
+                </div>
+            </nav>
+        </>
+    )}
+    else{
+    return (
+        <>
+            <nav className="navbar">
+                <div className="container-fluid">
                     <LogInButton className="btn rounded-1 submit" isLoggedIn={isLoggedIn} user={user} handleUser={handleUser}/>
                 </div>
             </nav>
         </>
     )
+    }
 }
 
 export default Navbar;
