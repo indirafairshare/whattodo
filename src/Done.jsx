@@ -7,7 +7,7 @@ function Done({todos, handleTick, handleDelete}) {
     return (
         
       <div className='done mb-2'>
-      <p>Done - {todos.length}</p>
+      <p className="task">Done - {todos.length}</p>
       <div className='list-group todo-list'>
         { todos.map(todo => {
           return <Task task = {todo} key = {todo.id} handleTick = {handleTick} handleDelete={handleDelete} />

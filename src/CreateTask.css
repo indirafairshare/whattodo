@@ -22,6 +22,12 @@
   font-weight: lighter;
 }
 
+.add-task>input[type='datetime-local']{
+  color: #DAC0A3;
+  opacity: 1;
+  font-weight: lighter;
+}
+
 .add-task .priority-flags {
   justify-items: auto;
   margin-right: 1rem;
@@ -54,3 +60,4 @@ label {
 input[type='radio']:checked+label {
   background-color: #EADBC8;
 }
+

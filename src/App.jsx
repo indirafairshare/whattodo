@@ -38,10 +38,11 @@ function App() {
               "id": doc.id,
               "todo": doc.data().todo,
               "done": doc.data().done,
-              "priority": doc.data().priority
+              "priority": doc.data().priority,
+              "do_by": doc.data().do_by
             })
           });
-          // console.log(storedTasks);
+          console.log(storedTasks);
           setTasks(storedTasks);
         });
       })
@@ -73,7 +74,7 @@ function App() {
       setTasks([
         ...tasks,
         {
-          "id": res.id, "todo": new_task.name, "priority": new_task.priority, "done": false
+          "id": res.id, "todo": new_task.name, "priority": new_task.priority, "do_by":new_task.do_by, "done": false
         }
       ])
     })

@@ -3,7 +3,7 @@
   padding-right: 10%;
   padding-top: 5%;
 }
-.done > p {
+.done .task {
   color: #102C57;
   font-weight: lighter;
   font-size: medium;
