@@ -16,12 +16,12 @@ export const getTasksByUser = (user) => {
   const tasksRef = collection(db, "tasks");
   const userRef = doc(db, "users", user.uid);
   const tasksQuery = query(tasksRef, where("user", "==", userRef));
-  console.log(tasksQuery);
+  // console.log(tasksQuery);
   return getDocs(tasksQuery);
 }
 
 export const addTask = (new_task, user) => {
-  console.log(new_task)
+  // console.log(new_task)
   const tasksRef = collection(db, "tasks");
   const userRef = doc(db, "users", user.uid)
   return addDoc(tasksRef, { "todo": new_task.name, "priority": new_task.priority, "done": false, "do_by": new_task.do_by, "user": userRef });

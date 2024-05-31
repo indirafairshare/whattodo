@@ -9,7 +9,7 @@ function CreateTask({ handleSubmit }) {
     setNewTask({...new_task, "priority": e.target.value})
   }
   return (
-    <form onSubmit={(e) => { e.preventDefault(); console.log(new_task); handleSubmit(new_task); setNewTask({"name": '', "priority":1, "do_by": new Date().toJSON()}); }}>
+    <form onSubmit={(e) => { e.preventDefault(); handleSubmit(new_task); setNewTask({"name": '', "priority":1, "do_by": new Date().toJSON()}); }}>
       <div className='input-group mb-2 add-task'>
         <input type='text' className='form-control rounded-1' placeholder='Add a new task' value={new_task.name} name="add_task" required="required" onChange={e => setNewTask({...new_task, "name": e.target.value})} />
         <input type='datetime-local' className='form-control rounded-1' value={new_task.do_by} name="add_task" required="required" onChange={e => setNewTask({...new_task, "do_by": e.target.value})} />
