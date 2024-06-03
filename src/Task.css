@@ -1,100 +1,52 @@
-.tasks .todo {
+.tasks {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
 }
 
-.tasks .todo .task {
+.tasks .heading {
   color: #102C57;
   font-weight: lighter;
   font-size: medium;
   padding-right: 1rem;
 }
 
-.tasks .todo .due {
+.tasks .todo-list .card .card-body {
+  font-size: medium;
+  float: right;
+  padding-top: 1rem;
+}
+
+.tasks .todo-list .card .card-body .task {
   color: #102C57;
   font-weight: lighter;
   font-size: medium;
   padding-right: 1rem;
+  float: left;
+}
+
+.tasks .todo-list .card .card-body .done {
+  text-decoration: line-through;
+}
+
+.tasks .todo-list .card .card-body .btn {
+  color: #102C57;
+  font-size: medium;
+  float: right;
+}
+
+
+.tasks .todo-list .card .card-body .priority-red {
+  color: #F6685E;
   text-decoration: underline 0.5px;
 }
 
-.tasks .todo .todo-list .card .card-body .done-check {
-  color: #102C57;
-  font-size: medium;
-  float: right;
-  /* padding-top: 1rem; */
-}
-
-.tasks .todo .todo-list .card .card-body>p {
-  color: #102C57;
-  font-size: medium;
-  float: left;
-}
-
-.tasks .todo .todo-list .card .card-body .priority-red {
-  color: #F6685E;
-}
-
-.tasks .todo .todo-list .card .card-body .priority-yellow {
+.tasks .todo-list .card .card-body .priority-yellow {
   color: #FFC04C;
+  text-decoration: underline 0.5px;
 }
 
-.tasks .todo .todo-list .card .card-body .priority-green {
+.tasks .todo-list .card .card-body .priority-green {
   color: #66B266;
+  text-decoration: underline 0.5px;
 }
-.done {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-}
-.done .task {
-  color: #102C57;
-  font-weight: lighter;
-  font-size: medium;
-}
-.done .todo-list .card .card-body  > p {
-  color: #102C57;
-  text-decoration: line-through;
-  font-size: medium;
-  float: left;
-  padding-top: 1rem;
-}
-
-.done .todo-list .card .card-body .done-trash {
-  color: #102C57;
-  font-size: medium;
-  float: right;
-  padding-top: 1rem;
-}
-
-.tasks .todo .todo-list .card .card-body {
-  font-size: medium;
-  float: right;
-  padding-top: 1rem;
-}
-
-.todo .todo-list .card .card-body .done-priority-red {
-  color: #F6685E;
-  font-size: medium;
-  float: right;
-  padding-top: 1rem;
-
-}
-
-.tasks .todo .todo-list .card .card-body .done-priority-yellow {
-  color: #FFC04C;
-  font-size: medium;
-  float: right;
-  padding-top: 1rem;
-
-}
-
-.tasks .todo .todo-list .card .card-body .done-priority-green {
-  color: #66B266;
-  font-size: medium;
-  float: right;
-  padding-top: 1rem;
-
-}
-
